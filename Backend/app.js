@@ -13,9 +13,10 @@ const userLogin = require('./Api/Routes/userLogin')
 
 const { default: mongoose } = require('mongoose')
 
-
+const db = 'mongodb+srv://sandipgunjal:xPO8gY6N0MaQz5g2@cluster0.kgz5pfu.mongodb.net/cricbuzzweb?retryWrites=true&w=majority&appName=Cluster0'
+mongoose.connect(db)
 // uri = 'mongodb+srv://sandipgunjal:qZR3MB4KFBZr4zsp@cluster0.kgz5pfu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
-mongoose.connect('mongodb://localhost:27017/cricbuzz')
+// mongoose.connect('mongodb+srv://sandipgunjal:ryIPnFeokAEM94xu@cluster0.kgz5pfu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 
 app.use(cors())
 // app.use(cors(
