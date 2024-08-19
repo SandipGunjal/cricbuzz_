@@ -10,7 +10,7 @@ router.get("/", async (req, res) => {
   try {
     const data = await Players.find();
     res.json(data);
-    console.log(data);
+    // console.log(data);
   } catch (err) {
     res.status(500).json({ message: err.message });
   }
